@@ -1,22 +1,84 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1"
     />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
-    <title>Moyo header</title>
+    <title>Moyo — Cabeçalho</title>
+
     <link
       rel="stylesheet"
-      href="./style.css"
+      href="style.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <h1>Moyo header</h1>
+    <header
+      class="site-header"
+      aria-label="Cabeçalho do site"
+    >
+      <a
+        href="/"
+        class="logo"
+      >
+        <img
+          src="images/logo.png"
+          alt="Logo da Moyo"
+          width="120"
+          height="32"
+        />
+      </a>
+      <nav
+        class="main-nav"
+        aria-label="Navegação principal"
+      >
+        <ul class="menu">
+          <li>
+            <a
+              href="#"
+              class="is-active"
+            >
+              Apple
+            </a>
+          </li>
+          <li><a href="#">Samsung</a></li>
+          <li><a href="#">Smartphone</a></li>
+          <li>
+            <a
+              href="#"
+              data-qa="hover"
+            >
+              Laptop &amp; computers
+            </a>
+          </li>
+          <li><a href="#">Gadgets</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Photo</a></li>
+          <li><a href="#">Video</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main
+      id="conteudo"
+      tabindex="-1"
+    ></main>
+    <footer
+      class="site-footer"
+      aria-label="Rodapé do site"
+    ></footer>
   </body>
 </html>
