@@ -1,10 +1,13 @@
+:root {
+  --blue-color: #00acdc;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 body {
@@ -21,12 +24,12 @@ img {
 }
 
 .container {
-  background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  height: 60px; /* mesma altura do line-height dos links */
 }
 
 .container > a {
@@ -37,28 +40,32 @@ img {
 .nav-list {
   list-style: none;
   display: flex;
-  text-align: center;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
 }
 
 .nav-link {
   text-decoration: none;
   color: #000;
-  line-height: 60px;
-  margin: 0 0 0 20px;
+  line-height: 60px; /* define altura do header */
   text-transform: uppercase;
-}
-
-.nav-link:first-child {
-  margin-left: 0;
+  position: relative;
+  display: inline-block;
 }
 
 .nav-link:hover {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .is-active {
-  position: relative;
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .is-active::after {
@@ -68,6 +75,7 @@ img {
   width: 100%;
   height: 4px;
   bottom: 0;
+  left: 0;
   border-radius: 8px;
-  background-color: #00acdc;
+  background-color: var(--blue-color);
 }
